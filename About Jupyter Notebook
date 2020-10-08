@@ -1,0 +1,36 @@
+Notebooks are a form of literate programming proposed by Donald Knuth in 1984. With literate programming, the documentation is written as a narrative
+alongside the code instead of sitting off by its own. 
+
+In Donald Knuth's words,
+"
+Instead of imagining that our main task is to instruct a computer what to do, 
+let us concentrate rather on explaining to human beings what we want a computer to do.
+                                                                                      "
+ http://www.literateprogramming.com/                                                                                     
+==================================================================================================================                                                                                     
+
+How Notebooks Work
+---------------------
+Jupyter notebooks grew out of the IPython project started by Fernando Perez. IPython is an interactive shell, similar to the normal Python shell but 
+with great features like syntax highlighting and code completion. Originally, notebooks worked by sending messages from the web app
+(the notebook you see in the browser) to an IPython kernel (an IPython application running in the background). The kernel executed the code,
+then sent it back to the notebook. The current architecture is similar.
+
+
+From Jupyter documentation
+
+The central point is the notebook server. You connect to the server through your browser and the notebook is rendered as a web app.
+Code you write in the web app is sent through the server to the kernel. The kernel runs the code and sends it back to the server, 
+then any output is rendered back in the browser. When you save the notebook, it is written to the server as a JSON file with a .ipynb file extension.
+
+The great part of this architecture is that the kernel doesn't need to run Python.
+Since the notebook and the kernel are separate, code in any language can be sent between them. For example, 
+two of the earlier non-Python kernels were for the R and Julia languages. With an R kernel, 
+code written in R will be sent to the R kernel where it is executed, exactly the same as Python code running on a Python kernel.
+IPython notebooks were renamed because notebooks became language agnostic. The new name Jupyter comes from the combination of Julia, Python, and R.
+If you're interested, here's a list of available kernels.
+
+Another benefit is that the server can be run anywhere and accessed via the internet.
+Typically you'll be running the server on your own machine where all your data and notebook files are stored. 
+But, you could also set up a server on a remote machine or cloud instance like Amazon's EC2. Then, you can access the notebooks in your browser from anywhere 
+in the world.
