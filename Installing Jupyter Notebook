@@ -1,0 +1,29 @@
+The Jupyter notebooks automatically get installed with the Anaconda distribution. You'll be able to use notebooks from the default environment.
+
+If you are using Miniconda, there are multiple ways you can install the Jupyter notebook. You can install Jupyter notebooks in a conda environment using the
+following commands in your Terminal/Anaconda Prompt:
+
+# First, verify if you have Python and conda installed
+# If the command below shows an error, try installing it first using `conda install python=3`
+python --version
+conda --version
+
+# Use either of the commands below to install notebook
+conda install jupyter notebook
+conda install -c conda-forge notebook
+If you are using pip, you can install Jupyter notebook with:
+
+
+# First, verify if you have pip installed. In recent versions of Python 2 >=2.7.9 or Python 3 >=3.4, pip comes preinstalled. 
+# If the `pip` command below shows an error, try installing pip from https://pip.pypa.io/en/stable/installing/ 
+python --version
+pip --version
+
+
+# Use either of the commands below to install notebook
+pip install notebook
+pip install jupyter notebook
+
+To run the notebook, run the following command at the Terminal (Mac/Linux) or Command Prompt (Windows) / Anaconda Prompt (Windows):
+
+jupyter notebook
