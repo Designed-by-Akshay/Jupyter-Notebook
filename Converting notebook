@@ -1,0 +1,51 @@
+Overview
+---------
+# Install the package below, if not already
+pip install nbconvert
+
+jupyter nbconvert --to FORMAT mynotebook.ipynb
+
+where FORMAT :
+HTML,
+LaTeX,
+PDF,
+WebPDF,
+Reveal.js HTML slideshow,
+Markdown,
+Ascii,
+reStructuredText,
+executable script,
+notebook.
+
+=======================================================================================
+Converting Notebooks
+Notebooks are just big JSON files with the extension .ipynb.
+
+
+Since notebooks are JSON, it is simple to convert them to other formats. Jupyter comes with a utility called nbconvert for converting to HTML, Markdown,
+slideshows, etc. The general syntax to convert a given mynotebook.ipynb file to another FORMAT is:
+
+----------------------------------------------------------------------------------
+jupyter nbconvert --to FORMAT mynotebook.ipynb
+The currently supported output FORMAT could be either of the following (ignore case):
+----------------------------------------------------------------------------------
+HTML,
+LaTeX,
+PDF,
+WebPDF,
+Reveal.js HTML slideshow,
+Markdown,
+Ascii,
+reStructuredText,
+executable script,
+notebook.
+For example, to convert a notebook to an HTML file, in your terminal use
+
+# Install the package below, if not already
+pip install nbconvert
+jupyter nbconvert --to html mynotebook.ipynb
+Note - If you wish to install any package in conda that is not available in Anaconda distribution, such as the Airbase package, use pip install airbase, 
+instead of conda install airbase.
+
+Converting to HTML is useful for sharing your notebooks with others who aren't using notebooks. Markdown is great for including a notebook in blogs and other
+text editors that accept Markdown formatting.
